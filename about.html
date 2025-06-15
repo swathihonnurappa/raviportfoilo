@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid py-5 px-4 bg-white rounded shadow">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 col-md-12">
+            <p class="text-success fw-semibold">EXPERT AUTOMOTIVE ENGINEER</p>
+            <h2 class="fw-bold">Driving innovation in engineering</h2>
+            <p>
+                Ravichandran H is a seasoned CAE Senior Engineer with over 6 years of experience in the automotive domain.
+                His expertise lies in Finite Element Modeling, Crash, NVH & Strength analysis, utilizing advanced tools
+                like ANSA, HYPERMESH, LS-DYNA, and Python.
+            </p>
+            <p>
+                This portfolio showcases his professional journey, skillset, and engineering projects,
+                aiming to inspire and connect with fellow professionals and enthusiasts in the field.
+            </p>
+            <a href="/contact" class="text-decoration-underline fw-semibold">Get in touch</a>
+        </div>
+
+        <div class="col-lg-5 col-md-10 text-center">
+            <img src="{{ url_for('static',filename='images/images.jpeg') }}" 
+                 alt="About Image" class="img-fluid rounded shadow" style="max-height: 350px;">
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="mb-4">Innovative solutions in automotive analysis</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+  <!-- Project 1 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="{{ url_for('static', filename='images/crash_green.jpg') }}" class="card-img-top" alt="Crash Safety">
+      <div class="card-body">
+        <h5 class="card-title">Enhanced vehicle crash safety through finite element modeling</h5>
+        <p class="card-text">Improved vehicle safety through advanced modeling techniques.</p>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalCrash" class="text-decoration-underline">Learn more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="{{ url_for('static', filename='images/noise.jpg') }}" class="card-img-top" alt="NVH Sedan">
+      <div class="card-body">
+        <h5 class="card-title">Achieved noise and vibration control for luxury sedan</h5>
+        <p class="card-text">Elevated luxury sedan experience through NVH analysis.</p>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalNVH" class="text-decoration-underline">Learn more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="{{ url_for('static', filename='images/crash_saftey.jpeg') }}" class="card-img-top" alt="EV Structural">
+      <div class="card-body">
+        <h5 class="card-title">Strengthened structural integrity for electric vehicle models</h5>
+        <p class="card-text">Reinforced electric vehicle structures for enhanced safety.</p>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalEV" class="text-decoration-underline">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODALS -->
+
+<!-- Modal: Crash -->
+<div class="modal fade" id="modalCrash" tabindex="-1" aria-labelledby="modalCrashLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="{{ url_for('static', filename='images/crash_green.jpg') }}" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">Enhanced vehicle crash safety through finite element modeling</h5>
+          <p>Ravichandran H successfully executed a comprehensive finite element modeling project aimed at enhancing vehicle crash safety. This project involved simulating various crash scenarios using advanced software tools like LS-DYNA and ANSA. By analyzing structural integrity and deformation patterns during impact, the project delivered critical insights that aided engineers in improving vehicle designs. The outcomes demonstrated a significant reduction in injury risk for occupants, proving the effectiveness of data-driven analysis in the automotive industry. The collaboration with automotive manufacturers resulted in the implementation of new safety standards, ensuring better protection for drivers and passengers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: NVH -->
+<div class="modal fade" id="modalNVH" tabindex="-1" aria-labelledby="modalNVHLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="{{ url_for('static', filename='images/noise.jpg') }}" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">Achieved noise and vibration control for luxury sedan</h5>
+          <p>In this project, Ravichandran H focused on NVH (Noise, Vibration, and Harshness) analysis for a luxury sedan. By employing state-of-the-art analysis tools, including Python for data processing, the project identified key sources of noise and vibration within the vehicle. Rigorous testing and simulations allowed for targeted interventions, resulting in a quieter cabin environment. The final deliverable included actionable recommendations that improved the overall driving experience, enhancing customer satisfaction. The successful implementation of these changes demonstrated the importance of rigorous NVH analysis in the luxury automotive market, setting a benchmark for future projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: EV Structure -->
+<div class="modal fade" id="modalEV" tabindex="-1" aria-labelledby="modalEVLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="{{ url_for('static', filename='images/crash_saftey.jpeg') }}" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">Strengthened structural integrity for electric vehicle models</h5>
+          <p>Ravichandran H led a project focused on conducting strength analysis for emerging electric vehicle models. Utilizing advanced finite element methods, the project assessed the structural performance of various components under real-world conditions. The analysis provided invaluable data that informed design modifications, ensuring that the electric vehicles met rigorous safety and performance standards. By collaborating with design teams, the project contributed to creating more robust and efficient vehicle structures, which ultimately enhanced consumer trust in electric mobility solutions. The results not only improved the vehicles’ marketability but also supported sustainability efforts in the automotive industry.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="mb-4 text-center">Data Science Projects</h2>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+
+
+  <!-- 🧠 Project Card 1 with Image -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="{{ url_for('static', filename='images/employee.png') }}" class="card-img-top" alt="Employee Project Image">
+      <div class="card-body">
+        <h5 class="card-title">Employee Attrition Prediction</h5>
+        <p class="card-text">
+          Built a machine learning model using logistic regression and decision trees to predict employee attrition. Deployed using Flask.
+        </p>
+        <a href="https://github.com/Ravichandranbond/Employee_atribute_ml_with_flask_deployment" target="_blank" class="btn btn-outline-primary">🔗 View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <!-- Project Card 2 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='images/electronics-11-01626-g001.webp') }}" class="card-img-top" alt="Food classification Project Image">
+      <div class="card-body">
+        <h5 class="card-title">Food Image Classification</h5>
+        <p class="card-text">
+          CNN-based classifier trained on types of food datasets to deploye a model that can accurately food items from images and estimate their calorie content.
+        </p>
+        <a href="https://github.com/Ravichandranbond/Food-101-Pictures-of-101-types-of-food" target="_blank" class="btn btn-outline-success">🔗 View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Card 3 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='images/innovations-in-human-machine-interaction-2023-768x403.jpg.webp') }}" class="card-img-top" alt="Human-Computer-Interaaction-And-Gesture-Based-Control-System Project Image">
+      <div class="card-body">
+        <h5 class="card-title">Human-Computer-Interaaction-And-Gesture-Based-Control-System</h5>
+        <p class="card-text">
+          Developed a Hand Gesture Recognition moel that can accurately identified and classify different hand gestures from image or video data, enabling intuitive Human-Computer interaction and Gesture based control systems.
+        </p>
+        <a href="https://github.com/Ravichandranbond/human-computer-interaaction-and-gesture-based-control-system" target="_blank" class="btn btn-outline-success">🔗 View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Card 4 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='images/tv.jpg') }}" class="card-img-top" alt="Advertising Project Image">
+      <div class="card-body">
+        <h5 class="card-title">Advertising-Expenditure-And-Sales-Data</h5>
+        <p class="card-text">
+        The data likely represents historical advertising expenditure and sales data for a particular product or company.
+        There's an assumption that advertising expenditure on these three media channels(TV, Newspaper, Radio) might influence sales.  
+        </p>
+        <a href="https://github.com/Ravichandranbond/advertiding-expenditure-and-sales-data" target="_blank" class="btn btn-outline-success">🔗 View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Card 5 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='images/cats-dogs.webp') }}" class="card-img-top" alt="Cats and Dogs image classification Project Image">
+      <div class="card-body">
+        <h5 class="card-title">Cats and Dogs Image Classification</h5>
+        <p class="card-text">
+          Implementating a Support Vector Machine(SVM) to classify image of Cats and Dogs from the Kaggle dataset.
+        </p>
+        <a href="https://github.com/Ravichandranbond/cats-and-dogs" target="_blank" class="btn btn-outline-success">🔗 View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Card 6 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='images/energy.jpg') }}" class="card-img-top" alt="Energy Project Image">
+      <div class="card-body">
+        <h5 class="card-title">Forecasting Renewable and Non Renewable Energy Generation</h5>
+        <p class="card-text">
+          CNN-based classifier trained on types of food datasets to deploye a model that can accurately food items from images and estimate their calorie content.
+        </p>
+        <a href="https://github.com/Ravichandranbond/Forecasting-Renewable-and-Non-renewable-Energy-Generation" target="_blank" class="btn btn-outline-success">🔗 View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Add more cards as needed -->
+
+</div>
+
+{% endblock %}

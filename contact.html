@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-5">
+  <div class="row g-5 align-items-start">
+
+    <!-- Contact Form -->
+    <div class="col-md-6">
+      <h6 class="text-success fw-semibold">GET IN TOUCH</h6>
+      <h2 class="fw-bold mb-4">Connect for collaboration and inquiries</h2>
+
+      <form method="POST" action="#" class="bg-light p-4 rounded shadow-sm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name *</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address *</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone number *</label>
+          <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="consent" required>
+          <label class="form-check-label" for="consent">I allow this website to store my submission so they can respond to my inquiry.</label>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">SUBMIT</button>
+      </form>
+    </div>
+
+    <!-- Contact Info + Map -->
+    <div class="col-md-6">
+      <h5 class="fw-bold">Get in touch</h5>
+      <p><i class="bi bi-envelope-fill"></i> <a href="mailto:ravichandran.metri@gmail.com">ravichandran.metri@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+916361198947">+91 6361198947</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ravichandran-honnuramma-9369a478/" target="_blank">Visit Profile</a></p>
+      <p><i class="bi bi-geo-alt-fill"></i> <a href="https://www.google.com/maps/place/Bengaluru,+KA,+India" target="_blank">Bengaluru, KA, India</a></p>
+
+      <div class="ratio ratio-4x3 mt-3">
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Bengaluru+KA+India"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
