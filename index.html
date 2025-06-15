@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ================= HOME SECTION ================= -->
+<section class="hero-full text-white text-center" id="home">
+  <h1 class="display-2 fw-bold">Engineering expertise unleashed</h1>
+  <p class="lead fs-4">Transforming ideas into reality</p>
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section class="container py-5" id="about">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h6 class="text-success">EXPERT AUTOMOTIVE ENGINEER</h6>
+      <h2 class="fw-bold">Driving innovation in engineering</h2>
+      <p>
+        Ravichandran H is a seasoned CAE Senior Engineer with over 6 years of experience in the automotive domain.
+        His expertise lies in Finite Element Modeling, Crash, NVH & Strength analysis, using tools like ANSA,
+        HYPERMESH, LS-DYNA, and Python.
+      </p>
+      <p>
+        This portfolio showcases his professional journey and projects aimed to connect with engineering professionals.
+      </p>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="{{ url_for('static',filename='images/images.jpeg') }}"  class="img-fluid rounded shadow" alt="About Image" style="max-height: 350px;">
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECT LINKS ================= -->
+<section class="container text-center py-5">
+  <h2 class="fw-bold mb-4">Explore My Work</h2>
+  <div class="d-flex justify-content-center gap-4 flex-wrap">
+    <a href="{{ url_for('cae_projects') }}" class="btn btn-outline-primary btn-lg px-4">CAE Projects</a>
+    <a href="{{ url_for('ds_projects') }}" class="btn btn-outline-success btn-lg px-4">Data Science Projects</a>
+  </div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section class="container py-5" id="contact">
+  <div class="row g-5 align-items-start">
+
+    <!-- Contact Form -->
+    <div class="col-md-6">
+      <h6 class="text-success fw-semibold">GET IN TOUCH</h6>
+      <h2 class="fw-bold mb-4">Connect for collaboration and inquiries</h2>
+
+      <form method="POST" action="#" class="bg-light p-4 rounded shadow-sm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name *</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address *</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone number *</label>
+          <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="consent" required>
+          <label class="form-check-label" for="consent">I allow this website to store my submission so they can respond to my inquiry.</label>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">SUBMIT</button>
+      </form>
+    </div>
+
+    <!-- Contact Info + Map -->
+    <div class="col-md-6">
+      <h5 class="fw-bold">Get in touch</h5>
+      <p><strong>Email:</strong> <a href="mailto:ravichandran.metri@gmail.com">ravichandran.metri@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+916361198947">+91 6361198947</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ravichandran-honnuramma-9369a478/" target="_blank">Visit Profile</a></p>
+      <p><strong>Address:</strong><br>
+        House No 62/2 Near Inner Space Glory Fields 2<br>
+        Choodasandra Road,<br>
+        Bengaluru - 560099, India
+       </p>
+
+       <!-- Google Maps -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=House%20No%2062/2%20Near%20Inner%20Space%20Glory%20Fields%202%20Choodasandra%20Road%20Bengaluru%20-%20560099&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
+
+  
+
+
