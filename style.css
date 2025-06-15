@@ -1,0 +1,73 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.05rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Main content container */
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section styling */
+.hero-full {
+    background-image: url("images/cae.webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Project sections */
+.project {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+}
+
+/* Navbar fixes */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.navbar .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd;
+}
+
+/* Contact & Links */
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
